@@ -3,7 +3,10 @@ import React, {useState} from 'react'
 function ContClick(){
 
     const [count, setCount] = useState(0);
-
+  
+    useEffect(() => {
+    document.title = `Você clicou ${count} vezes`;
+  }, [count]);
     return(
         <div>
             <h1>Você clicou {count} vezes</h1>
