@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 
 function ContClick(){
 
@@ -7,6 +7,7 @@ function ContClick(){
     useEffect(() => {
     document.title = `Você clicou ${count} vezes`;
   }, [count]);
+    
     return(
         <div>
             <h1>Você clicou {count} vezes</h1>
